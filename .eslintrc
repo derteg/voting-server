@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "eslint-config-rambler",
+    "./node_modules/eslint-config-rambler/.eslintrc"
+  ],
+  "rules": {
+    "react/jsx-closing-bracket-location": ["warn", "line-aligned"],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-indent": ["error", 2],
+    "react/no-multi-comp": ["warn", { "ignoreStateless": true }],
+    "react/sort-prop-types": ["off"],
+    "no-console": ["error", { "allow": ["warn", "error"] }]
+  },
+  "settings": {
+    "polyfills": ["intersectionobserver"]
+  }
+}
